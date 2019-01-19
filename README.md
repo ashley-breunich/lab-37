@@ -257,4 +257,4 @@ Sets the state - e.target.value
 I am having issues testing out this program - it keeps throwing an error for the simplest of tests (like asserting that a div is present). Any suggestions? 
 
 #### UML
-Link to an image of the UML for your application and response to events
+[Link to UML](assets/lab-37-uml.jpg)
