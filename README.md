@@ -253,12 +253,8 @@ Sets the state - e.target.value
 
 --> The login forms
 
-
-
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+I am having issues testing out this program - it keeps throwing an error for the simplest of tests (like asserting that a div is present). Any suggestions? 
 
 #### UML
 Link to an image of the UML for your application and response to events
