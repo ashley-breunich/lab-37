@@ -191,6 +191,69 @@ sets the state of the id to null
 --> props.condition OR null depending
 
 
+#### `auth/auth.js`
+##### Exported Values and Methods
+
+###### `CLASS Auth`
+--> LoginContext.Consumer
+
+--> context function
+
+
+#### `auth/context.js`
+##### Exported Values and Methods
+
+###### `CLASS LoginProvider`
+Set the state - loggedIn, token, login(), logout()
+
+###### `setLoginState()`
+<-- loggedIn
+
+Sets the state - loggedIn, token
+
+###### `login()`
+<-- tokin
+
+this.setLoginState(true)
+
+###### `logout()`
+this.setLoginState(true)
+
+###### `render()`
+--> LoginContext.Provider 
+
+--> this.props.children
+
+
+#### `auth/login.js`
+##### Exported Values and Methods
+
+###### `CLASS Login`
+no state
+
+###### `handleChange()`
+<-- e
+
+Sets the state - e.target.value
+
+###### `handleSubmit()`
+<-- e, loginMethodFromContext
+
+--> loginMethodFromContext(token) OR error depending
+
+###### `logout()`
+<-- e, loginMethodFromContext
+
+--> logoutMethodFromProvider()
+
+###### `render()`
+--> LoginContext.Consumer
+
+--> context function
+
+--> The login forms
+
+
 
 #### Tests
 * How do you run tests?
