@@ -10,14 +10,82 @@
 * [travis](https://codesandbox.io/s/3j1476xzp)
 
 ### Modules
-#### `modulename.js`
+#### `index.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `Main()`
+--> Provider wrapper that creates the store 
 
-###### `bar(array) -> array`
-Usage Notes or examples
+--> App Component
+
+
+#### `store/index.js`
+##### Exported Values and Methods
+
+###### `store()`
+--> Creates the store with the reducers and applies middleware
+
+
+#### `lib/api.js`
+##### Exported Values and Methods
+
+###### `get()`
+<-- url
+
+--> result.body OR error depending on what is returned
+
+
+#### `record/actions.js`
+##### Exported Values and Methods
+
+###### `post()`
+<-- payload, dispatch
+
+--> dispatch(runPost) OR error depending on what is returned
+
+###### `runPost()`
+<-- payload
+
+--> type: POST
+
+--> payload
+
+###### `get()`
+<-- payload, dispatch
+
+--> dispatch(runGet) OR error depending on what is returned
+
+###### `runGet()`
+<-- payload
+
+--> type: GET
+
+--> payload
+
+###### `put()`
+<-- payload, dispatch
+
+--> dispatch(runPut) OR error depending on what is returned
+
+###### `runPut()`
+<-- payload
+
+--> type: PUT
+
+--> payload
+
+###### `destroy()`
+<-- payload, dispatch
+
+--> dispatch(runDestroy) OR error depending on what is returned
+
+###### `runDestory()`
+<-- payload
+
+--> type: DELETE
+
+--> payload
+
 
 #### Tests
 * How do you run tests?
