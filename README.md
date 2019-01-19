@@ -87,6 +87,111 @@
 --> payload
 
 
+#### `record/list.js`
+##### Exported Values and Methods
+
+###### `CLASS Records`
+Sets the state: id to null
+
+###### `deleteRecord()`
+<-- id
+
+--> this.props.handleDelete();
+
+###### `editRecord()`
+<-- id
+
+sets the state of the id
+
+###### `reset()`
+--> this.props.handleGetAll();
+
+###### `render()`
+--> div tag with all the record components embedded
+
+###### `mapStateToProps()`
+<-- state
+
+--> records
+
+###### `mapDispatchToProps()`
+<-- dispatch, getState
+
+--> handleDelete
+
+--> handleGetAll
+
+
+#### `record/record.js`
+##### Exported Values and Methods
+
+###### `CLASS Record`
+Sets the state: schema to an empty object {}
+
+###### `componentDidMount()`
+Set the state - schema
+
+###### `resetPlayer()`
+<-- id
+
+sets the state of the id to null
+
+###### `reset()`
+--> this.props.handleGetAll();
+
+###### `handleSubmit()`
+<-- form
+
+--> this.props.handlePut() OR this.props.handlePost() depending on if the event is a put or post
+
+###### `render()`
+--> h3 tag and Form component
+
+###### `mapStateToProps()`
+<-- state
+
+--> records
+
+###### `mapDispatchToProps()`
+<-- dispatch, getState
+
+--> handlePost
+
+--> handlePut
+
+--> handlePatch
+
+
+#### `record/reducers.js`
+##### Exported Values and Methods
+
+###### `export default`
+<-- state, action
+
+--> type
+
+
+#### `app.js`
+##### Exported Values and Methods
+
+###### `CLASS App`
+--> Login Context 
+
+--> Login Component
+
+--> RecordList Component
+
+
+#### `if/index.js`
+##### Exported Values and Methods
+
+###### `If()`
+<-- props
+
+--> props.condition OR null depending
+
+
+
 #### Tests
 * How do you run tests?
 * What assertions were made?
